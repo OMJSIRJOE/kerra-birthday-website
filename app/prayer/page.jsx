@@ -21,7 +21,7 @@ export default function PrayerPage() {
         </p>
         <div className="relative mt-10 flex justify-center">
           <Button href="/surprise" variant="light">
-            One More Thing...
+            One more thing…
           </Button>
         </div>
       </div>

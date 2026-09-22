@@ -24,7 +24,7 @@ export default function FuturePage() {
         </p>
         <div className="mt-10 flex justify-center">
           <Button href="/tribute" variant="secondary">
-            There&apos;s something else...
+            There&apos;s something else…
           </Button>
         </div>
       </div>
