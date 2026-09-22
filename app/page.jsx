@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import Button from "@/components/Button";
 import PageShell from "@/components/PageShell";
 import { birthdayContent } from "@/data/birthdayContent";
@@ -80,20 +79,10 @@ export default function HomePage() {
         </div>
 
         {hero.tagline && (
-          <p className="absolute bottom-20 left-1/2 z-10 w-full max-w-xs -translate-x-1/2 text-xs tracking-[0.35em] text-ivory/75 uppercase">
+          <p className="absolute bottom-10 left-1/2 z-10 w-full max-w-xs -translate-x-1/2 text-xs tracking-[0.35em] text-ivory/75 uppercase sm:bottom-12">
             {hero.tagline}
           </p>
-        )}
-        <motion.div
-          className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-ivory/60"
-          animate={reduceMotion ? undefined : { y: [0, 6, 0] }}
-          transition={{ duration: 2.2, repeat: Infinity }}
-          aria-hidden
-        >
-          <ChevronDown size={22} />
-          <span className="sr-only">Scroll to explore</span>
-        </motion.div>
-      </section>
+        )}      </section>
     </PageShell>
   );
 }
