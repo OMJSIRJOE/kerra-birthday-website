@@ -19,10 +19,12 @@ export default function AdorePage() {
             <AdoreCard key={item.title} item={item} index={index} />
           ))}
         </div>
-        <p className="mt-14 text-center text-xs tracking-[0.35em] text-warm-brown uppercase">
-          {adore.tagline}
-        </p>
-        <div className="mt-10 flex justify-center">
+        {adore.tagline ? (
+          <p className="mt-14 text-center text-xs tracking-[0.35em] text-warm-brown uppercase">
+            {adore.tagline}
+          </p>
+        ) : null}
+        <div className={`flex justify-center ${adore.tagline ? "mt-10" : "mt-14"}`}>
           <Button href="/memories">See Our Memories</Button>
         </div>
       </div>

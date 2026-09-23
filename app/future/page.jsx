@@ -19,10 +19,12 @@ export default function FuturePage() {
             <ExperienceItem key={item.text} item={item} index={index} />
           ))}
         </ol>
-        <p className="mt-12 text-center font-script text-2xl text-dusty-rose">
-          {future.tagline}
-        </p>
-        <div className="mt-10 flex justify-center">
+        {future.tagline ? (
+          <p className="mt-12 text-center font-script text-2xl text-dusty-rose">
+            {future.tagline}
+          </p>
+        ) : null}
+        <div className={`flex justify-center ${future.tagline ? "mt-10" : "mt-12"}`}>
           <Button href="/tribute" variant="secondary">
             There&apos;s something else…
           </Button>
