@@ -388,7 +388,7 @@ Amen.`,
 
   finalMessage: {
 
-    title: "Happy 26th birthday baby",
+    title: "Happy birthday baby ♡",
 
     body: `I hope today you feel celebrated.
 
